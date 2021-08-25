@@ -1,0 +1,153 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body{
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(0,251,255);
+   background: linear-gradient(0deg, rgba(0,251,255,1) 0%, rgba(91,218,166,1) 95%);
+}
+
+.todo__body {
+   background-color: #fff;
+   padding: 20px;
+}
+.todo__title {
+   font-size: 30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-bottom: 15px;
+}
+
+.todo__text {
+   width: 300px;
+   height: 40px;
+   padding-left: 3px;
+   font-size: 15px;
+}
+
+.todo__button-add {
+   padding: 12px;
+   outline: none;
+   border: none;
+   color: white;
+   background-color: blueviolet;
+   transition: all 0.5s;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.todo__button-add:hover{
+   background-color: blue;
+   transform: rotate(360deg);
+}
+
+.todo__empty{
+   margin-top: 20px;
+   color: red;
+   font-size: 15px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo__task {
+   margin-top: 15px;
+   font-size: 18px;
+   background-color: #dedcdc;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 10px;
+   height: 40px;
+}
+.btn__delete {
+   background-color: #d46666;
+   color: white;
+   border: none;
+   padding: 10px;
+   height: 40px;
+   opacity: 0;
+   transition: all 0.4s;
+   transform: translateX(-10px);
+}
+.todo__task:hover .btn__delete{
+   opacity: 1;
+   transform: translateX(0px);
+}
+
+.btn__delete:hover{
+   background-color: blue;
+}
+.todo-list{
+   max-height: 300px;
+   overflow-y: auto;
+}
+
+.todo__bottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 20px;
+}
+.todo__score {
+   font-size: 17px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo__score span{
+   font-size: 17px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: blueviolet;
+}
+
+.todo__clear {
+   font-size: 17px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 7px 13px 7px 13px;
+   background-color: blueviolet;
+   color: white;
+   transition: 0.5s;
+}
+
+.todo__clear:hover{
+   background-color: blue;
+   transform: scale(1.05);
+}
+.error{
+   border: 2px solid red;
+}
+.active{
+   opacity: 0.5;
+}

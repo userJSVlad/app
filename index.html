@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/style.css">
+   <title>Todos</title>
+</head>
+
+<body>
+
+   <div class="todo">
+      <div class="todo__body">
+         <form action="#">
+            <div class="todo__title">Todo App</div>
+            <div class="todo__input">
+               <input type="text" class="todo__text" ondrop="return false" placeholder="Add your new todo">
+               <button class="todo__button-add" type="submit">
+                  <i class="fas fa-plus todo_click"></i>
+               </button>
+            </div>
+         </form>
+         <div class="todo-list">
+
+         </div>
+         <p class="todo__empty"></p>
+         <div class="todo__bottom">
+            <div class="todo__score">You have <span>0</span> padding tasks</div>
+            <buttonv class="todo__clear">Clear All</button>
+         </div>
+      </div>
+   </div>
+
+
+   <script src="js/main.js"></script>
+</body>
+
+</html>
